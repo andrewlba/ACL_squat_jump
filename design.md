@@ -1,4 +1,4 @@
-# Users:
+# Design:
 
 ### User Type 1: Dr. Jane (Main User)
 
@@ -25,3 +25,15 @@
 3. (If any) If issues come up, ensure that data is clean and that tool outputs appropriate visualizations. 
 
 **Skill Level**: Familiar with the datasets used. Not great at interpreting the results at a medical level.
+
+### Components
+
+#### High-level Tool Operating Process
+
+1. Data Cleaning
+    - Input: CSV from force plate (TBD: Specification of column types)
+    - Output: Usable data for metric computation and visualization
+2. Data Processing (i.e., Metrics Calculation)
+    - Contains functions for generating metrics that are used for visualization 
+3. Dashboard Visualization
+    - Contains visualization display
