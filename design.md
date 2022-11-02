@@ -28,92 +28,82 @@
 
 ### Components
 
-#### High-level Tool Operating Process
-
-1. Data Cleaning
-    - Input: CSV from force plate (TBD: Specification of column types)
-    - Output: Usable data for metric computation and visualization
-2. Data Processing (i.e., Metrics Calculation)
-    - Contains functions for generating metrics that are used for visualization 
-3. Dashboard Visualization
-    - Contains visualization display
-
 #### List of Components
 
-**1. Database:**:
-Usage: Store the CSV data files that are retrieved from the force plates. [TO BE CHANGED]
+**1. Raw Data:** 
+Description: The raw CSV file containing numeric values (ordered by time, partitioned by patient)
 
-**2. Raw Data:** 
-Usage: The raw CSV data file containing numeric values (ordered by time, partitioned by user)
+**2. Clean Data:** 
+Description: Cleaned raw data ready for processing (i.e., calculating metrics)
 
-**2. Keyboard:**
-Usage: To interact with the software.
+**3. Processed Data:** 
+Description: DataFrame containing the calculated metrics to be used for visualization, created from Clean Data
 
-**3. Git/GitHub:**
-Usage: Version Control software for collaboration and hosting data/data-tools.
+**4. Keyboard:**
+Description: For users to interact with the software.
 
-**5. Pandas/NumPy/Math:**
-Usage: Scientific stack of Python Libraries to be used in data cleaning, and metric calculations.
+**5. Git/GitHub:**
+Description: Version Control software for collaboration and hosting data/data-tools.
+
+**5. Scientific Stack (Python Libraries: Pandas/NumPy/Math):**
+Description: Scientific stack of Python Libraries to be used in data cleaning, and metric calculations.
 
 **6. Utils Functions:**
-Usage: Distinct python file containing utility functions to be used in data processing.
+Description: Python script containing utility functions to be used in data processing (i.e., metrics calculation).
 
-**7. Streamlit:**
-Usage: Web Interface to display visualizations of our data.
+**7. Visualization Functions:**
+Description: Used to create the visualizations
 
-**8. Screen:**
-Usage: Used to see the visualizations
+**8. Streamlit:**
+Description: Web Interface to display visualizations of our data.
 
-**9. Visualization Functions:**
-Usage: Used to create the visualizations
+**9. Screen:**
+Description: For users to view the visualizations and interact with the dashboard
 
 
-### Use Cases:
+### Use Cases with Components:
 
 #### 1: Data Cleaning and Pre-Processing:
-Import and cleans the CSV data files that are retrieved from the force plates
+Purpose: To import and clean the raw data that are retrieved from the force plates (which extracts the biomechanical data on patients' squat jumps)
 
 **Input Components:**:
 1. Raw Data: CSV file
 
-Tools to be used:
-
-1. Keyboard
-2. Git/GitHub
-3. Scientific Stack (Python Libraries)
-4. Screen 
+Tools:
+- Keyboard
+- Git/GitHub
+- Scientific Stack (Python Libraries)
+- Screen 
 
 **Output Components:**:
 1. Clean Dataset: NumPy Array
 2. Status Report: Boolean value representing Success/Failure
 
 #### 2: Data Processing:
-Calculating biomechanical features from the Cleaned Data to create clinically interpretable metrics to be used in data visualization
+Purpose: To calculate clinically interpretable metrics to be used in data visualization from the biomechanical features in the Cleaned Data 
 
 **Input Components:**:
-1. Clean Dataset
+1. Clean Dataset: NumPy Array
 
-Tools to be used:
-
-1. Utils Functions
-2. Scientific Stack (Python Libraries)
+Tools:
+- Utils Functions
+- Scientific Stack (Python Libraries)
 
 **Output Components:**:
 1. Processed Dataframe: Pandas DataFrame
 2. Status Report: Boolean value representing Success/Failure
 
 #### 3: Data Visualization:
-Visualizing the calculated biomechanical metrics
+Purpose: To visualize the calculated biomechanical metrics into a dashboard
 
 **Input Components:**:
-1. Processed Dataframe
+1. Processed Dataframe: Pandas DataFrame
 
-Tools to be used:
-
-1. Visualization Functions
-2. Streamlit
-3. Python Libraries (Seaborn, Plotly)
-4. GitHub: to launch the Streamlit App
+Tools:
+- Visualization Functions
+- Streamlit
+- Python Libraries (e.g., Seaborn, Plotly)
+- Git/GitHub (to launch the Streamlit App)
 
 **Output Components:**:
 1. Streamlit Dashboard
