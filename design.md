@@ -40,4 +40,80 @@
 
 #### List of Components
 
-1. 
+**1. Database:**:
+Usage: Store the CSV data files that are retrieved from the force plates. [TO BE CHANGED]
+
+**2. Raw Data:** 
+Usage: The raw CSV data file containing numeric values (ordered by time, partitioned by user)
+
+**2. Keyboard:**
+Usage: To interact with the software.
+
+**3. Git/GitHub:**
+Usage: Version Control software for collaboration and hosting data/data-tools.
+
+**5. Pandas/NumPy/Math:**
+Usage: Scientific stack of Python Libraries to be used in data cleaning, and metric calculations.
+
+**6. Utils Functions:**
+Usage: Distinct python file containing utility functions to be used in data processing.
+
+**7. Streamlit:**
+Usage: Web Interface to display visualizations of our data.
+
+**8. Screen:**
+Usage: Used to see the visualizations
+
+**9. Visualization Functions:**
+Usage: Used to create the visualizations
+
+
+### Use Cases:
+
+#### 1: Data Cleaning and Pre-Processing:
+Import and cleans the CSV data files that are retrieved from the force plates
+
+**Input Components:**:
+1. Raw Data: CSV file
+
+Tools to be used:
+
+1. Keyboard
+2. Git/GitHub
+3. Scientific Stack (Python Libraries)
+4. Screen 
+
+**Output Components:**:
+1. Clean Dataset: NumPy Array
+2. Status Report: Boolean value representing Success/Failure
+
+#### 2: Data Processing:
+Calculating biomechanical features from the Cleaned Data to create clinically interpretable metrics to be used in data visualization
+
+**Input Components:**:
+1. Clean Dataset
+
+Tools to be used:
+
+1. Utils Functions
+2. Scientific Stack (Python Libraries)
+
+**Output Components:**:
+1. Processed Dataframe: Pandas DataFrame
+2. Status Report: Boolean value representing Success/Failure
+
+#### 3: Data Visualization:
+Visualizing the calculated biomechanical metrics
+
+**Input Components:**:
+1. Processed Dataframe
+
+Tools to be used:
+
+1. Visualization Functions
+2. Streamlit
+3. Python Libraries (Seaborn, Plotly)
+4. GitHub: to launch the Streamlit App
+
+**Output Components:**:
+1. Streamlit Dashboard
