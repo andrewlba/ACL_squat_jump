@@ -37,3 +37,7 @@
     - Contains functions for generating metrics that are used for visualization 
 3. Dashboard Visualization
     - Contains visualization display
+
+#### List of Components
+
+1. 
