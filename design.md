@@ -1,5 +1,7 @@
 # Design:
 
+## User Types
+
 ### User Type 1: Dr. Jane (Main User)
 
 **User Need**: Jane is a physician who wants to visualize force data from the jumping force plates. She wants to be able to see the numerical differences between the two legs using graphs.
@@ -26,84 +28,94 @@
 
 **Skill Level**: Familiar with the datasets used. Not great at interpreting the results at a medical level.
 
-### Components
+## Components
 
-#### List of Components
+### List of Components
 
-**1. Raw Data:** 
-Description: The raw CSV file containing numeric values (ordered by time, partitioned by patient)
+**1. Raw Data** 
 
-**2. Clean Data:** 
-Description: Cleaned raw data ready for processing (i.e., calculating metrics)
+*Description*: The raw CSV file containing numeric values (ordered by time, partitioned by patient)
 
-**3. Processed Data:** 
-Description: DataFrame containing the calculated metrics to be used for visualization, created from Clean Data
+**2. Clean Data**
 
-**4. Keyboard:**
-Description: For users to interact with the software.
+*Description*: Cleaned raw data ready for processing (i.e., calculating metrics)
 
-**5. Git/GitHub:**
-Description: Version Control software for collaboration and hosting data/data-tools.
+**3. Processed Data** 
 
-**5. Scientific Stack (Python Libraries: Pandas/NumPy/Math):**
-Description: Scientific stack of Python Libraries to be used in data cleaning, and metric calculations.
+*Description*: DataFrame containing the calculated metrics to be used for visualization, created from Clean Data
 
-**6. Utils Functions:**
-Description: Python script containing utility functions to be used in data processing (i.e., metrics calculation).
+**4. Keyboard**
 
-**7. Visualization Functions:**
-Description: Used to create the visualizations
+*Description*: For users to interact with the software.
 
-**8. Streamlit:**
-Description: Web Interface to display visualizations of our data.
+**5. Git/GitHub**
 
-**9. Screen:**
-Description: For users to view the visualizations and interact with the dashboard
+*Description*: Version Control software for collaboration and hosting data/data-tools.
+
+**5. Scientific Stack (Python Libraries: Pandas/NumPy/Math)**
+
+*Description*: Scientific stack of Python Libraries to be used in data cleaning, and metric calculations.
+
+**6. Utils Functions**
+
+*Description*: Python script containing utility functions to be used in data processing (i.e., metrics calculation).
+
+**7. Visualization Functions**
+
+*Description*: Used to create the visualizations
+
+**8. Streamlit**
+
+*Description*: Web Interface to display visualizations of our data.
+
+**9. Screen**
+
+*Description*: For users to view the visualizations and interact with the dashboard
 
 
-### Use Cases with Components:
+## Use Cases (with Components)
 
-#### 1: Data Cleaning and Pre-Processing:
-Purpose: To import and clean the raw data that are retrieved from the force plates (which extracts the biomechanical data on patients' squat jumps)
+### 1: Data Cleaning and Pre-Processing
+*Purpose*: To import and clean the raw data that are retrieved from the force plates (which extracts the biomechanical data on patients' squat jumps)
 
-**Input Components:**:
+**Input Components**
 1. Raw Data: CSV file
 
-Tools:
+*Tools*:
 - Keyboard
 - Git/GitHub
 - Scientific Stack (Python Libraries)
 - Screen 
 
-**Output Components:**:
+**Output Components**
 1. Clean Dataset: NumPy Array
 2. Status Report: Boolean value representing Success/Failure
 
-#### 2: Data Processing:
-Purpose: To calculate clinically interpretable metrics to be used in data visualization from the biomechanical features in the Cleaned Data 
+### 2: Data Processing
+*Purpose*: To calculate clinically interpretable metrics to be used in data visualization from the biomechanical features in the Cleaned Data 
 
-**Input Components:**:
+**Input Components**
 1. Clean Dataset: NumPy Array
 
-Tools:
+*Tools*:
 - Utils Functions
 - Scientific Stack (Python Libraries)
 
-**Output Components:**:
+**Output Components**
 1. Processed Dataframe: Pandas DataFrame
 2. Status Report: Boolean value representing Success/Failure
 
-#### 3: Data Visualization:
-Purpose: To visualize the calculated biomechanical metrics into a dashboard
+### 3: Data Visualization
+*Purpose*: To visualize the calculated biomechanical metrics into a dashboard
 
-**Input Components:**:
+**Input Components**
 1. Processed Dataframe: Pandas DataFrame
 
-Tools:
+*Tools*:
 - Visualization Functions
 - Streamlit
 - Python Libraries (e.g., Seaborn, Plotly)
 - Git/GitHub (to launch the Streamlit App)
 
-**Output Components:**:
+**Output Components**
 1. Streamlit Dashboard
