@@ -6,53 +6,58 @@ Header Row: 7
 
 COL A: Time
 
-COL B/K: FP1/FP2-Force in x-direction
+COL B/K: FP1/FP2-Force in x-direction (N)
 
-COL C/L: FP1/FP2-Force in y-direction (Vertical)
+COL C/L: FP1/FP2-Force in y-direction (Vertical) (N)
 
-COL D/M: FP1/FP2-Force in z-direction 
+COL D/M: FP1/FP2-Force in z-direction (N)
 
-COL E/N: FP1/FP2-COP in x-direction 
+COL E/N: FP1/FP2-COP in x-direction (cm)
 
-COL F/O: FP1/FP2-COP in y-direction (Just zero bc vertical)
+COL F/O: FP1/FP2-COP in y-direction (Just zero bc vertical) (cm)
 
-COL G/P: FP1/FP2-COP in z-direction
+COL G/P: FP1/FP2-COP in z-direction (cm)
 
-COL H/Q: FP1/FP2-Torque/Moment in x-direction 
+COL H/Q: FP1/FP2-Torque/Moment in x-direction (Don't need)
 
-COL I/R: FP1/FP2-Torque/Moment in y-direction
+COL I/R: FP1/FP2-Torque/Moment in y-direction (Don't need)
 
-COL J/S: FP1/FP2-Torque/Moment in z-direction
+COL J/S: FP1/FP2-Torque/Moment in z-direction (Don't need)
 
 FP1 = Right
 
 FP2 = Left
 
 ## Squat Identification
-1. Jump Start
-2. Jump End
-3. Eccentric phase
-4. Concentric phase
-5. Jump off
-6. Landing
+1. Total Jump Start-When movement begins (before Jump)
+2. Total Jump End-When movement ends (after Landing)
+3. Eccentric phase-Start of loading to concentric peak
+4. Concentric phase-Concentric peak to when force = 0
+6. Landing-Second peak in jump curve to when movement ends
 
 ## Squat Calculations
 
-1. Jump height from takeoff velocity (units TBD)-distance equation with v_inital and a = g
-2. Jump height from flight time (units: TBD)-
-3. Rate of force development during eccentric phase (N/s)/Normalized rate (BW/s) (What is eccentric phase?)
-4. Jump time (s)-Start to end of jump?
-5. Eccentric phase time (s)-Jump off?
-6. Concentric phase time (s)-loading? or is it landing?
+1. Jump height from takeoff velocity (cm)-v^2/2g
+2. Jump height from flight time (cm)-
+3. Rate of force development during eccentric phase (N/s)/Normalized rate (BW/s)-Loading rate during eccentric phase
+4. Jump time (s)-Starts from beginning of loading/eccentric phase and ends when patient is in the air
+5. Eccentric phase time (s)
+6. Concentric phase time (s)
 7. Flight time (s)-Time when force = 0
 8. Peak force (N)/Normalized (BW)
-9. Peak power (W)/Normalized (W/kg)-Peak Force * jump height?
-10. Average power during concentric phase (W)/Normazlied (W/kg)-how to calculate?
-11. Countermovement depth (units: TBD)-squat depth?
-12. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (units: TBD)-relative to what?
-13. Maximum center of pressure displacement in M-L direction (z-direction) during concentric phase (units: TBD)-relative to what?
+9. Peak power (W)/Normalized (W/kg)-Find velocity and multiple by Force
+10. Average power during concentric phase (W)/Normazlied (W/kg)
+11. Countermovement/Squat depth (cm)-Difference between standing and lowest depth (double integrate)
+12. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (cm)
+13. Maximum center of pressure displacement in M-L direction (z-direction) during concentric phase (cm)
+
+## Additional Calculations 
+
+1. Concentric Force (N)
+2. Landing Force (N)
+3. Eccentric Time:Jump Time Ratio
 
 ## Force Plate Coordinates
 
-![Force Plate Coordinates](/ACL_squat_jump/project_starter/FP-coordinates.png "Force Plate Coordinates")
+![Force Plate Coordinates](/pwd/FP-coordinates.png "Force Plate Coordinates")
 
