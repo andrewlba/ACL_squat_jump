@@ -45,7 +45,7 @@ FP2 = Left
 6. Concentric phase time (s)
 7. Flight time (s)-Time when force = 0
 8. Peak force (N)/Normalized (BW)
-9. Peak power (W)/Normalized (W/kg)-Find velocity and multiple by Force
+9. Peak power (W)/Normalized (W/kg)-Find velocity and multiple by Force 
 10. Average power during concentric phase (W)/Normazlied (W/kg)
 11. Countermovement/Squat depth (cm)-Difference between standing and lowest depth (double integrate)
 12. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (cm)
@@ -55,7 +55,7 @@ FP2 = Left
 
 1. Concentric Force (N)
 2. Landing Force (N)
-3. Eccentric Time:Jump Time Ratio
+3. Eccentric Time: Jump Time Ratio
 
 ## Force Plate Coordinates
 
