@@ -51,6 +51,10 @@ FP2 = Left
 12. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (cm)
 13. Maximum center of pressure displacement in M-L direction (z-direction) during concentric phase (cm)
 
+## Visual metrics
+1. (animation) COP of each foot vs time
+2. (animation) Force magnitude in a 3D space vs time
+
 ## Additional Calculations 
 
 1. Concentric Force (N)
