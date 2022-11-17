@@ -33,23 +33,22 @@ FP2 = Left
 2. Total Jump End-When movement ends (after Landing)
 3. Eccentric phase-Start of loading to concentric peak
 4. Concentric phase-Concentric peak to when force = 0
-6. Landing-Second peak in jump curve to when movement ends
+5. Landing-Second peak in jump curve to when movement ends
 
 ## Squat Calculations
 
 1. Jump height from takeoff velocity (cm)-v^2/2g
-2. Jump height from flight time (cm)-
-3. Rate of force development during eccentric phase (N/s)/Normalized rate (BW/s)-Loading rate during eccentric phase
-4. Jump time (s)-Starts from beginning of loading/eccentric phase and ends when patient is in the air
-5. Eccentric phase time (s)
-6. Concentric phase time (s)
-7. Flight time (s)-Time when force = 0
-8. Peak force (N)/Normalized (BW)
-9. Peak power (W)/Normalized (W/kg)-Find velocity and multiple by Force 
-10. Average power during concentric phase (W)/Normazlied (W/kg)
-11. Countermovement/Squat depth (cm)-Difference between standing and lowest depth (double integrate)
-12. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (cm)
-13. Maximum center of pressure displacement in M-L direction (z-direction) during concentric phase (cm)
+2. Rate of force development during eccentric phase (N/s)/Normalized rate (BW/s)-Loading rate during eccentric phase
+3. Jump time (s)-Starts from beginning of loading/eccentric phase and ends when patient is in the air
+4. Eccentric phase time (s)
+5. Concentric phase time (s)
+6. Flight time (s)-Time when force = 0
+7. Peak force (N)/Normalized (BW)
+8. Peak power (W)/Normalized (W/kg)-Find velocity and multiple by Force 
+9. Average power during concentric phase (W)/Normazlied (W/kg)
+10. Countermovement/Squat depth (cm)-Difference between standing and lowest depth (double integrate)
+11. Maximum center of pressure displacement in A-P direction (x-direction) during concentric phase (cm)
+12. Maximum center of pressure displacement in M-L direction (z-direction) during concentric phase (cm)
 
 ## Visual metrics
 1. (animation) COP of each foot vs time
@@ -64,4 +63,3 @@ FP2 = Left
 ## Force Plate Coordinates
 
 ![Force Plate Coordinates](/pwd/FP-coordinates.png "Force Plate Coordinates")
-
